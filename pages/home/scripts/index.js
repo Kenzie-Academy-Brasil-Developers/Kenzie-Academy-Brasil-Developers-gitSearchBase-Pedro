@@ -25,7 +25,7 @@ function createCardMinor(user) {
         const recentToJson = JSON.stringify(recentAdded)
         localStorage.setItem("recentAdded", recentToJson)
 
-        window.location = "../profile/index.html"
+        window.location = "./index.html"
     })
 
     a.innerHTML = `
@@ -117,7 +117,7 @@ btnMain.addEventListener("click", async (event)=>{
         const userNowToJson = JSON.stringify(userNow)
         localStorage.setItem("userNow", userNowToJson)  
         
-        window.location.replace("../profile/index.html")        
+        window.location.replace("./pages/profile/index.html")        
     }
 })
 
